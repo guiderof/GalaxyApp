@@ -1,0 +1,43 @@
+header{
+  background-color: #0028b3;
+  padding: 10px;
+  color: #ffffff;
+  margin-bottom: 15px;
+}
+header h4{
+  margin: 0;
+}
+.product-list{
+  cursor: pointer;
+}
+.list-img{
+  width: 100%;
+}
+.list-details{
+  padding: 20px 0 10px;
+}
+.list-details h5, .list-details p{
+  margin: 0;
+  padding: 0;
+}
+.detail-img{
+  max-width: 100%;
+  margin-bottom: 20px;
+}
+.product-detail label{
+  width: 100px;
+}
+.price-old{
+  text-decoration: line-through;
+  color: #ccc
+}
+.price-discount{
+  color: #00b615;
+}
+.shopping-cart thead tr, .col-no, .col-total{
+  text-align: center;
+}
+.col-qty, .col-amt{
+  text-align: right;
+  width: 150px;
+}
