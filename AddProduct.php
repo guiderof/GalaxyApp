@@ -8,7 +8,7 @@
     <meta name="author" content="">
 
     <!-- Le styles -->
-    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
     <script src="js/jquery-1.12.3.min.js" type="text/javascript"></script>
     <script>
         var addProduct = function () {
