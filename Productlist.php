@@ -28,8 +28,8 @@
     </style>
     <script src="js/jquery-1.12.3.min.js" type="text/javascript"></script>
     <script>
-        var addProduct = function () {
-            
+        var goAddProduct = function () {
+            window.location.href = "http://128.199.107.16/AddProduct.php";
         };
     </script>
   </head>
@@ -37,7 +37,7 @@
   <body>
     <div class="container">
       <div class="span6">
-          <h1>Product List</h1><div class="btn-product"><input type="button" id="addProduct" value="Add" class="btn" onclick="javascript : addProduct();"></div> <!-- /container -->
+          <h1>Product List</h1><div class="btn-product"><input type="button" id="addProduct" value="Add" class="btn" onclick="javascript : goAddProduct();"></div> <!-- /container -->
             <table class="table table-bordered" id="listProduct">
               <tbody>
                 <thead class="table-bordered">

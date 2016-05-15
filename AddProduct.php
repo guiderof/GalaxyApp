@@ -9,6 +9,12 @@
 
     <!-- Le styles -->
     <link href="css/bootstrap.css" rel="stylesheet">
+    <script src="js/jquery-1.12.3.min.js" type="text/javascript"></script>
+    <script>
+        var addProduct = function () {
+            
+        };
+    </script>
     <style>
       body {
         padding-top: 60px; /* 60px to make the container go all the way to the bottom of the topbar */
