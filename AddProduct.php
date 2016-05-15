@@ -8,7 +8,19 @@
     <meta name="author" content="">
 
     <!-- Le styles -->
-    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <script src="js/jquery-1.12.3.min.js" type="text/javascript"></script>
+    <script>
+        var addProduct = function () {
+            $.ajax({
+                method: "POST",
+                url: "http://128.199.107.16/api/controller/addProduct.php"
+            })
+            .done(function( msg ) {
+                alert( "Data Saved: " + msg );
+            });
+        };
+    </script>
     <style>
       body {
         padding-top: 60px; /* 60px to make the container go all the way to the bottom of the topbar */
@@ -18,6 +30,7 @@
   </head>
 
  <body>
+   <form name="frmAdd" id="frmAdd" action="" method="post" enctype="multipart/form-data">
     <div class="container">
 
       <h1>Add Product</h1>
@@ -56,8 +69,9 @@
       </div>
       <div>
           <button id="btnCancel">Cancel</button>
-          <button id="btnSave">Save</button>
+          <button id="btnSave" onclick="javascript : addProduct()">Save</button>
       </div>
     </div> <!-- /container -->
+   </form>
   </body>
 </html>
