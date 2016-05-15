@@ -86,7 +86,7 @@
       </div>
       <div>
           <button id="btnCancel">Cancel</button>
-          <button id="btnSave" onclick="javascript : addProduct()">Save</button>
+          <button type="button" id="btnSave" onclick="javascript : addProduct()">Save</button>
       </div>
     </div> <!-- /container -->
    </form>
