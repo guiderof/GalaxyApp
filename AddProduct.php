@@ -12,12 +12,12 @@
     <script src="js/jquery-1.12.3.min.js" type="text/javascript"></script>
     <script>
         var addProduct = function () {
-            var SKU = $('#SKU').value();
-            var ProductName = $('#ProductName').value();
-            var Price = $('#Price').value();
-            var SpecialPrice = $('#SpecialPrice').value();
-            var Description = $('#SKU').value();
-            var OrderNo = $('#SKU').value();
+            var SKU = $('#SKU').val();
+            var ProductName = $('#ProductName').val();
+            var Price = $('#Price').val();
+            var SpecialPrice = $('#SpecialPrice').val();
+            var Description = $('#Description').val();
+            var OrderNo = $('#OrderNo').val();
 
             console.log('save data', SKU, ProductName, Price, SpecialPrice, Description, OrderNo);
 
@@ -53,19 +53,19 @@
       <h1>Add Product</h1>
       <div class="row">
             <span class="span4">SKU :</span>
-            <span class="span8"><input type="text" name="SKU" id="SKU" value=""></span>
+            <span class="span8"><input type="text" name="SKU" id="SKU" val=""></span>
       </div>
       <div class="row">
             <span class="span4">Name :</span>
-            <span class="span8"><input type="text" name="ProductName" id="ProductName" value=""></span>
+            <span class="span8"><input type="text" name="ProductName" id="ProductName" val=""></span>
       </div>
       <div class="row">
             <span class="span4">Price :</span>
-            <span class="span8"><input type="text" name="Price" id="Price" value=""></span>
+            <span class="span8"><input type="text" name="Price" id="Price" val=""></span>
       </div>
       <div class="row">
             <span class="span4">Special Price :</span>
-            <span class="span8"><input type="text" name="SpecialPrice" id="SpecialPrice" value=""></span>
+            <span class="span8"><input type="text" name="SpecialPrice" id="SpecialPrice" val=""></span>
       </div>
       <div class="row">
             <span class="span4">Description :</span>
@@ -75,14 +75,14 @@
       </div>
       <div class="row">
             <span class="span4">Image :</span>
-            <span class="span8"><input type="file" name="btnBrowseImage" id="btnBrowseImage" value=""></span>
+            <span class="span8"><input type="file" name="btnBrowseImage" id="btnBrowseImage" val=""></span>
       </div>
       <div id="ImagePreview">
            Preview
       </div>
       <div class="row">
             <span class="span4">Order No:</span>
-            <span class="span8"><input type="text" name="OrderNo" id="OrderNo" value=""></span>
+            <span class="span8"><input type="text" name="OrderNo" id="OrderNo" val=""></span>
       </div>
       <div>
           <button id="btnCancel">Cancel</button>
