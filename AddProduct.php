@@ -12,12 +12,29 @@
     <script src="js/jquery-1.12.3.min.js" type="text/javascript"></script>
     <script>
         var addProduct = function () {
+            var SKU = $('#SKU').value();
+            var ProductName = $('#ProductName').value();
+            var Price = $('#Price').value();
+            var SpecialPrice = $('#SpecialPrice').value();
+            var Description = $('#SKU').value();
+            var OrderNo = $('#SKU').value();
+
+            console.log('save data', SKU, ProductName, Price, SpecialPrice, Description, OrderNo);
+
             $.ajax({
                 method: "POST",
-                url: "http://128.199.107.16/api/controller/addProduct.php"
+                url: "http://128.199.107.16/api/controller/addProduct.php",
+                data: {
+                    SKU: SKU,
+                    ProductName: ProductName,
+                    Price: Price,
+                    SpecialPrice: SpecialPrice,
+                    Description: Description,
+                    OrderNo: OrderNo
+                }
             })
             .done(function( msg ) {
-                alert( "Data Saved: " + msg );
+                console.log( "ok ?" + msg );
             });
         };
     </script>
