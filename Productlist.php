@@ -26,7 +26,12 @@
         width: 100%;
       }
     </style>
-
+    <script src="js/jquery-1.12.3.min.js" type="text/javascript"></script>
+    <script>
+        var addProduct = function () {
+            
+        };
+    </script>
   </head>
 
   <body>
