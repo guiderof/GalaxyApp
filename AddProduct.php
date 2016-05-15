@@ -30,6 +30,7 @@
   </head>
 
  <body>
+   <form name="frmAdd" id="frmAdd" action="" method="post" enctype="multipart/form-data">
     <div class="container">
 
       <h1>Add Product</h1>
@@ -71,5 +72,6 @@
           <button id="btnSave">Save</button>
       </div>
     </div> <!-- /container -->
+   </form>
   </body>
 </html>
