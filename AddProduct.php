@@ -47,7 +47,7 @@
   </head>
 
  <body>
-   <form name="frmAdd" id="frmAdd" method="post" enctype="multipart/form-data">
+   <form name="frmAdd" id="frmAdd">
     <div class="container">
 
       <h1>Add Product</h1>
