@@ -12,7 +12,13 @@
     <script src="js/jquery-1.12.3.min.js" type="text/javascript"></script>
     <script>
         var addProduct = function () {
-            
+            $.ajax({
+                method: "POST",
+                url: "http://128.199.107.16/api/controller/addProduct.php"
+            })
+            .done(function( msg ) {
+                alert( "Data Saved: " + msg );
+            });
         };
     </script>
     <style>
