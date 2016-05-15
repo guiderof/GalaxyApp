@@ -4,8 +4,8 @@ $(document).ready(function() {
 
 function getProducts() {
     $.ajax({
-        url: 'http://128.199.107.16/api/productList.php',
-        method: 'POST',
+        url: 'http://128.199.107.16/api/model/productList.php',
+        method: 'GET',
         dataType: 'json',
         success: function(data) {
             var result = '';
