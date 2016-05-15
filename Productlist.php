@@ -32,7 +32,7 @@
   <body>
     <div class="container">
       <div class="span6">
-          <h1>Product List</h1><div class="btn-product"><input type="button" id="addProduct" value="Add" class="btn" onclick="javascript : addProduct();"></div> <!-- /container -->
+          <h1>Product List</h1><div class="btn-product"><input type="button" id="addProduct" value="Add" class="btn" onclick="location.href='AddProduct.php'"></div> <!-- /container -->
             <table class="table table-bordered" id="listProduct">
               <tbody>
                 <thead class="table-bordered">
