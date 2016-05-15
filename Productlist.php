@@ -9,12 +9,12 @@
 
     <!-- Le styles -->
     <link href="../css/bootstrap.css" rel="stylesheet">
+    <script type="text/javascript" src="../js/jquery-1.12.3.min.js" ></script>
     <style>
       body {
         padding-top: 60px; /* 60px to make the container go all the way to the bottom of the topbar */
       }
     </style>
-
   </head>
 
   <body>
@@ -24,6 +24,8 @@
       <p>Use this document as a way to quick start any new project.<br> All you get is this message and a barebones HTML document.</p>
 
     </div> <!-- /container -->
+
+
 
     <!-- Le javascript
     ================================================== -->

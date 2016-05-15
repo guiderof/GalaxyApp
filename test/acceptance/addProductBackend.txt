@@ -6,8 +6,42 @@ Library         Selenium2Library
 ${url}          http://128.199.107.16
 
 ***Test Case***
-Show 0 product
+Add 1 product
     Open backend
-    Page should no product
+    Go to add product
+    Expect 1 product
+
+Add other product
+    Go to add product
+    Expect other product
 
 ***Keywords***
+Open backend
+    Open Browser    ${url}/Productlist.php
+
+Go to add product
+    Click Element       addProduct
+
+Expect 1 product
+    Input Text              SKU             ${sku1}
+    Input Text              ProductName     ${productName1}
+    Input Text              Price           ${price1}
+    Input Text              SpecialPrice    ${specialPrice1}
+    Input Text              Description     ${description1}
+    Input Text              Image           ${image1}
+    Input Text              OrderNo         ${orderNo1}
+    Click Element           btnSave
+    Location Should Be      ${url}/Productlist.php
+    Page Should Contain     ${sku1}
+
+Expect other product
+    Input Text              SKU             ${sku2}
+    Input Text              ProductName     ${productName2}
+    Input Text              Price           ${price2}
+    Input Text              SpecialPrice    ${specialPrice2}
+    Input Text              Description     ${description2}
+    Input Text              Image           ${image2}
+    Input Text              OrderNo         ${orderNo2}
+    Click Element           btnSave
+    Location Should Be      ${url}/Productlist.php
+    Page Should Contain     ${sku2}
