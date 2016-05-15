@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8"><meta charset="UTF-8">
+</head>
+    <body>
+        <div class="customer-detail">
+            <h4><label>ชื่อ</label> <span>FirstName Lastname</span></h4>
+            <h4><label>อีเมล</label> <span>example@mail.com</span></h4>
+            <h4><label>เบอร์โทร</label> <span>086-8541258</span></h4>
+        </div>
+        <table class="order-detail">
+            <thead>
+                <tr>
+                    <td>No</td>
+                    <td>Name</td>
+                    <td>Qty</td>
+                    <td>Amount</td>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="col-no">1</td>
+                    <td>Product Name</td>
+                    <td class="col-qty">10</td>
+                    <td class="col-amt">500 THB</td>
+                </tr>
+                <tr class="col-total">
+                    <td colspan="2">Total</td>
+                    <td class="col-qty">10</td>
+                    <td class="col-amt">500 THB</td>
+                </tr>
+            </tbody>
+        </table>
+    </body>
+    <style>
+        .customer-detail{
+        background-color: #eee;
+        padding: 20px;
+        color: #444;
+        }
+        .customer-detail h4{
+        margin: 10px 0;
+        font-weight: normal;
+        }
+        .customer-detail label{
+        width: 100px;
+        display: inline-block;
+        font-weight: bold;
+        }
+        .order-detail{
+        width: 100%;
+        margin: 15px 0;
+        border-collapse: collapse;
+        }
+        .order-detail thead{
+        background-color: #ccc;
+        color: #666;
+        font-weight: bold;
+        }
+        .order-detail thead td, .order-detail tbody td{
+        padding: 5px;
+        border: 1px solid #bbb;
+        }
+        .col-no, .order-detail thead, .col-total{
+        text-align: center;
+        }
+        .col-amt, .col-qty{
+        text-align: right;
+        }
+        .col-total{
+        font-weight: bold;
+        }
+    </style>
+</html>
