@@ -1,0 +1,13 @@
+*** Settings ***
+Documentation   add product backend
+Library         Selenium2Library
+
+***Variables***
+${url}          http://128.199.107.16
+
+***Test Case***
+Show 0 product
+    Open backend
+    Page should no product
+
+***Keywords***
