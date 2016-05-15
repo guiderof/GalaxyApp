@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
-    <title>Bootstrap, from Twitter</title>
+    <title>Product List</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="">
     <meta name="author" content="">
@@ -17,6 +17,14 @@
         width: 100%;
 
       }
+      .btn-product {
+        float: right;
+
+      }
+      .table{
+        max-width: 900px;
+        width: 100%;
+      }
     </style>
 
   </head>
@@ -24,7 +32,7 @@
   <body>
     <div class="container">
       <div class="span6">
-          <h1>Product List</h1><input type="button" id="addProduct" value="Add"> <!-- /container -->
+          <h1>Product List</h1><div class="btn-product"><input type="button" id="addProduct" value="Add" class="btn" onclick="javascript : addProduct();"></div> <!-- /container -->
             <table class="table table-bordered" id="listProduct">
               <tbody>
                 <thead class="table-bordered">
